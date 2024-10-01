@@ -1,0 +1,12 @@
+@import 'bootstrap/dist/css/bootstrap';
+@import 'table';
+
+.modal-header .modal-title
+{
+    width: 100%;
+}
+
+.content-container 
+{
+    margin-top: 56px;
+}

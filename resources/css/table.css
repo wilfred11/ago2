@@ -1,0 +1,4 @@
+tr.selected>td { 
+    background-color:blue;
+    color:white;
+ }

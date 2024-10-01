@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JaarbasisController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/jaarbasissen', [JaarbasisController::class, 'index']);
+
+Route::get('/jaarbasissen/{id}', [JaarbasisController::class, 'filter']);
+
+Route::get('/data', [JaarbasisController::class, 'data']);
+
+
